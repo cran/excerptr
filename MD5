@@ -1,8 +1,8 @@
-32fb99ef6d1f25ab6dd01ad00ee8b75b *DESCRIPTION
+66ac7fe92d3c01ac257d3a08b8e6ffbd *DESCRIPTION
 921a7df9fb893d1869a189ac07543dc0 *INSTALL
 8f54895584ca5a75bf65ae4d15ab7121 *LICENSE
 8cacf93551036d9ed382c9629cc2ea75 *NAMESPACE
-6f4e0a685786d058517acdca39a0ab35 *NEWS.md
+5b267a8ec7f43534bc2977a137d86131 *NEWS.md
 8b82c0e756f2a3583c7bafc00fd7ffc1 *R/excerptr-package.R
 4e65d92a97c7672cb95af6fa1b3ce74d *R/excerptr.R
 bc4cb3d55bb606f1176754075ab7da34 *R/get_excerpts.R
@@ -10,7 +10,7 @@ bc4cb3d55bb606f1176754075ab7da34 *R/get_excerpts.R
 1823b567156ca6aba07cd83e8d7e5ef8 *R/options.R
 ab7d0346468d6c201e54999644017b06 *R/utils.R
 9a6b94db83d435d06d58d2a66a016a69 *R/zzz.R
-f3e078452a02c8b6d839aca569e9b405 *README.md
+4dde04026ddd1072e1d26c6254ae45ad *README.md
 c678ece347284825a135dddab4993b96 *build/vignette.rds
 8d843e55a65c7468d0a2add258fe9567 *inst/doc/excerptr_Introduction.R
 0f30053ccd73749d4ab4fe1ee8b253a6 *inst/doc/excerptr_Introduction.Rmd
@@ -79,7 +79,7 @@ fb81af04527484389cff2e1309b3de9b *inst/excerpts/utils/run.py
 a6012826e94a55d27d296217fce77bff *inst/tests/files/some_file.html
 868c767a86afd0bdb29143f11e71bb9c *inst/tests/files/some_file.md
 03be6e56cabf770168c58eae4dcc5ba6 *inst/tests/testthat.R
-6d73ae2b0207437764a52693f08df414 *inst/tests/testthat/test_basic.R
+a28cc64aa578714222009bed5f123031 *inst/tests/testthat/test_basic.R
 8865ccba7df29027c7be50cb418c625f *man/concatenate_python_codes.Rd
 42a09f696691b6a20b7ca051513dd0c6 *man/construct_path.Rd
 9cc68b7b4750f5ff5f281728331b64fb *man/excerptr-package.Rd
@@ -92,5 +92,5 @@ fd2ae0aba1315be6726381b57c2f73bf *man/set_excertps_path.Rd
 a6012826e94a55d27d296217fce77bff *tests/files/some_file.html
 868c767a86afd0bdb29143f11e71bb9c *tests/files/some_file.md
 03be6e56cabf770168c58eae4dcc5ba6 *tests/testthat.R
-6d73ae2b0207437764a52693f08df414 *tests/testthat/test_basic.R
+a28cc64aa578714222009bed5f123031 *tests/testthat/test_basic.R
 0f30053ccd73749d4ab4fe1ee8b253a6 *vignettes/excerptr_Introduction.Rmd
