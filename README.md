@@ -39,38 +39,53 @@ help("excerptr-package", package = "excerptr")
 ```
 
 ## System Requirements
-excerptr needs [python3](https://www.python.org/download/releases/3.0/).
+excerptr needs [python3](https://www.python.org/download/releases/3.0/),
+You probably want to have [pandoc](https://www.pandoc.org/) and a TeX-System such as 
+[TeXLive](https://www.tug.org/texlive/) installed.
 
 ## Installation
 
 ### Unix
 Install [the rPython package](https://cran.r-project.org/package=rPython), see 
 file [INSTALL](https://cran.r-project.org/package=rPython/INSTALL) there,
-<!-- then install excerptr from [CRAN](https://cran.r-project.org/package=excerptr) -->
-then install excerptr from [CRAN](https://cran.r-project.org/)
+then install excerptr from [CRAN](https://cran.r-project.org/package=excerptr)
 
 ```r
 install.packages("excerptr")
 ```
 
 ### Windows
+
+#### rPython-win
 Install [rPython-win](https://github.com/cjgb/rPython-win)
 (follow the instructions at 
 [https://cran.r-project.org/package=rPython/INSTALL](https://cran.r-project.org/package=rPython/INSTALL)
 ).
+
+##### Folks at [fvafr](http://www.fva-bw.de/)
+Should you happen to be one of my colleagues at  [fvafr](http://www.fva-bw.de/), please follow 
+[these instructions](howto_fva.md).
+
+#### excerptr
 Then get the excerptr source
 from [github](https://github.com/fvafrCU/excerptr), edit the file DESCRIPTION and remove the line reading
     OS_type: unix
 and install the package manually:
 
-```r
-if (! require("git2r")) install.packages("git2r")
-local_path <- file.path(tempdir(), "excerptr")
-description <- file.path(local_path, "DESCRIPTION")
-git2r::clone("https://github.com/fvafrCU/excerptr", local_path = local_path)
+```
+local_directory <- tempdir()
+local_path <- file.path(local_directory, "master.zip")
+url <- "https://github.com/fvafrCU/excerptr/archive/master.zip"
+download.file(url, local_path, method = "wininet", mode = "wb")
+unzip(local_path, exdir = local_directory)
+excerptr_path <- file.path(local_directory, "excerptr-master")
+description <- file.path(excerptr_path, "DESCRIPTION")
+my_r_version <- paste(R.Version()[["major"]], R.Version()[["minor"]], sep = ".")
 d <- readLines(description)
 d1 <- d[-grep("^OS_type:", d)]
+d1[grep("^ *R \\(", d1)] <- paste0("    R (>= ", my_r_version,")")
 writeLines(d1, description)
-install.packages(local_path, repos = NULL, type = "source")
+install.packages(excerptr_path, repos = NULL, type = "source")
 ```
+
 
