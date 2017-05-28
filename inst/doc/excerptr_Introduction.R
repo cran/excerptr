@@ -10,8 +10,8 @@ cat(readLines(file.path(tempdir(), sub("\\.R$", ".md", basename(path)))),
     sep = "\n")
 
 ## ------------------------------------------------------------------------
-is_pandoc_installed <- length(Sys.which("pandoc") >= 0) &&
-                              length(Sys.which("pandoc-citeproc") >= 0)
+is_pandoc_installed <- nchar(Sys.which("pandoc")) > 0 &&
+                              nchar(Sys.which("pandoc-citeproc")) > 0
 is_pandoc_version_sufficient <- FALSE
 if (is_pandoc_installed) {
     reference <- "1.12.3"
