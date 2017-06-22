@@ -11,7 +11,7 @@ from . import main
 
 ## @brief     Test if a Program is Installed
 #
-#    Will raise an error if the programm is not found.
+#    Will raise an error if the program is not found.
 #
 # @param		name	The name of the program to be tested for.
 # @return
@@ -35,9 +35,12 @@ def is_tool(name):
 
 ## @brief     Run Pandoc on a File
 #
-# 	file_name	The file on which to run pandoc.
-# 	formats	The pandoc output formats to be used.
-# 	compile_latex	Compile the LaTeX file?
+#
+# @param		file_name	The file on which to run pandoc.
+# @param		formats	The pandoc output formats to be used.
+#                 A comma separated string ("html,tex" for example) a tuple or a
+#                 list giving the formats.
+# @param		compile_latex	Compile the LaTeX file?
 # @return
 #        0 if parsing was successful, 1 otherwise.
 #
@@ -45,7 +48,9 @@ def is_tool(name):
 def pandoc(file_name, compile_latex=False, formats="tex"):
     status = 1
     if is_tool("pandoc"):
-        for form in formats.split(","):
+        if isinstance(formats, str):
+            formats = formats.split(",")
+        for form in formats:
             subprocess.check_call(["pandoc", "-sN", file_name, "-o",
                                    main.modify_path(file_name=file_name,
                                                     extension=form)])

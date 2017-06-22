@@ -31,11 +31,8 @@ help("excerptr-package", package = "excerptr")
 ## Details:
 ## 
 ##      You will probably only want to use 'excerptr', see there for a
-##      usage example.
-## 
-## Author(s):
-## 
-##      Andreas Dominik Cullmann, <adc-r@arcor.de>
+##      usage example. All other functions documented are rather meant for
+##      internal use.
 ```
 
 ## System Requirements
@@ -64,7 +61,7 @@ Install [rPython-win](https://github.com/cjgb/rPython-win)
 
 ##### rPython-win for Folks at [fvafr](http://www.fva-bw.de/)
 Should you happen to be one of my colleagues at  [fvafr](http://www.fva-bw.de/), please follow 
-[these instructions](howto_fva.md).
+[these instructions](https://github.com/fvafrCU/excerptr/blob/master/howto_fva.md).
 
 #### excerptr
 Then get the excerptr source

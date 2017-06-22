@@ -5,14 +5,12 @@
 \alias{excerptr-package}
 \title{Excerpt Structuring Comments from Your Code File and Set a Table of Contents}
 \description{
-This is just an R interface to the 
+This is just an R interface to the
 python package excerpts (\url{https://pypi.python.org/pypi/excerpts}).
 }
 \details{
 You will probably only want to use \code{\link{excerptr}}, see there for a
-usage example.
-}
-\author{
-Andreas Dominik Cullmann, <adc-r@arcor.de>
+usage example. All other functions documented are rather meant for internal
+use.
 }
 \keyword{package}

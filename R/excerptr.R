@@ -14,11 +14,13 @@ NULL
 #' @param allow_pep8 Don't bother. See excerpts.excerpts for details.
 #' @param prefix Give a prefix to use for output files.
 #' @param postfix Give a postfix to use for output files.
-#' @param run_pandoc Try to run pandoc on the output file?
-#' @param compile_latex Try to compile LaTeX if pandoc has output LaTeX?
+#' @param run_pandoc Try to run \command{pandoc} on the output?
+#' @param compile_latex Try to compile LaTeX if \command{pandoc} has output
+#' LaTeX?
 #' @param pandoc_formats A character vector naming the output formats for
-#' pandoc.
-#' @return The status of the rPython::python.call() call to excerpts.
+#' \command{pandoc}.
+#' @return The status of the \pkg{rPython}\code{::\link[rPython]{python.call}}
+#' call to excerpts.
 #' @export
 #' @examples
 #' root <- system.file(package = "excerptr")
@@ -40,7 +42,6 @@ excerptr <- function(file_name, comment_character = "#", magic_character = "%",
                                    prefix = prefix, postfix = postfix,
                                    run_pandoc = run_pandoc,
                                    compile_latex = compile_latex,
-                                   pandoc_formats = paste(pandoc_formats,
-                                                          collapse = ","))
+                                   pandoc_formats = as.list(pandoc_formats))
     return(status)
 }
