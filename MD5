@@ -1,8 +1,8 @@
-c1a51046e49d63bd065f1f6f9642a1c7 *DESCRIPTION
+438c1b79eb8cdc7e11b7982d05ef207f *DESCRIPTION
 352a21227bce607cb07ae55d916124e8 *INSTALL
 8f54895584ca5a75bf65ae4d15ab7121 *LICENSE
 8cacf93551036d9ed382c9629cc2ea75 *NAMESPACE
-200018a6c49dd029bbe7e3db93136144 *NEWS.md
+c3056fa02ed984c7d36ff38b2c0dd702 *NEWS.md
 ebc5c42e3714307d2427da62539b254c *R/excerptr-package.R
 dd62f1652ea7acd0724e1cf9d389ce2c *R/excerptr.R
 b2cc0cc236e7218bf2646eb09fe4d4d4 *R/get_excerpts.R
@@ -10,11 +10,11 @@ b2cc0cc236e7218bf2646eb09fe4d4d4 *R/get_excerpts.R
 1a3301ff42854dec9a8b6b62f0514dab *R/options.R
 e7210ff922e443f0123e4a463bab6424 *R/utils.R
 9a6b94db83d435d06d58d2a66a016a69 *R/zzz.R
-0d61538a64c93a3acd6d52cb7aabd049 *README.md
+5fc35a35d0a48042079b0eae13a4100a *README.md
 c678ece347284825a135dddab4993b96 *build/vignette.rds
 d2c55aed507cb178230c485aab07ba14 *inst/doc/excerptr_Introduction.R
 0775d1f266e244deff3eea95c22b73ef *inst/doc/excerptr_Introduction.Rmd
-d8beddb6bb352e2ef806a7ac08ec6b3a *inst/doc/excerptr_Introduction.html
+93053cfd04c66e093c3afc1aef62fbe3 *inst/doc/excerptr_Introduction.html
 712c68a4c70dc648a4050febaaa0144a *inst/excerpts/LICENSE
 439c879b9f7c7a944e85afffc5d435b2 *inst/excerpts/MANIFEST.in
 8068136b7c6efdf09cc6381ae3ccf02a *inst/excerpts/NEWS.rst
@@ -25,7 +25,6 @@ ed6e8acd0fc6dc7fe77a527472ee0b43 *inst/excerpts/codes_doxygen/command_line.py
 df8b43b912ce4f473003eaa441a5fb76 *inst/excerpts/codes_doxygen/main.py
 335426818ad6813d99a2bf2d1d52adc1 *inst/excerpts/codes_doxygen/op.py
 cbe2349c4374387d47cf563f49502a4a *inst/excerpts/codes_doxygen/ui.py
-72524e3bf272841ca78cb66ad4b83e35 *inst/excerpts/docs/doxygen/html/namespacemembers_func.html
 541ea74d47d0cf2e3f99d087e4082508 *inst/excerpts/docs/excerpts.cmain.html
 5cd413f7bd2c2eba9a37ea559447b2a7 *inst/excerpts/docs/excerpts.command_line.html
 694db1e4720af781f9ef0703174af6f8 *inst/excerpts/docs/excerpts.cos.html
@@ -85,7 +84,7 @@ ed94ed69741ec76c66fea6cf6f38356c *inst/excerpts/utils/tags.cl
 a6012826e94a55d27d296217fce77bff *inst/tests/files/some_file.html
 868c767a86afd0bdb29143f11e71bb9c *inst/tests/files/some_file.md
 03be6e56cabf770168c58eae4dcc5ba6 *inst/tests/testthat.R
-781ca5cc4ce8df02d297b9971f086255 *inst/tests/testthat/test_basic.R
+5e493ae0754ca951f4db371038feede6 *inst/tests/testthat/test_basic.R
 15cded134052556efc7d3c01652cd93f *man/concatenate_python_codes.Rd
 4c8df6f78fe0ecc8b3e827034a92d51b *man/construct_path.Rd
 230c772fd8365212abd5e27a8ce838fd *man/excerptr-package.Rd
@@ -98,5 +97,5 @@ fd2ae0aba1315be6726381b57c2f73bf *man/set_excertps_path.Rd
 a6012826e94a55d27d296217fce77bff *tests/files/some_file.html
 868c767a86afd0bdb29143f11e71bb9c *tests/files/some_file.md
 03be6e56cabf770168c58eae4dcc5ba6 *tests/testthat.R
-781ca5cc4ce8df02d297b9971f086255 *tests/testthat/test_basic.R
+5e493ae0754ca951f4db371038feede6 *tests/testthat/test_basic.R
 0775d1f266e244deff3eea95c22b73ef *vignettes/excerptr_Introduction.Rmd
