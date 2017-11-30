@@ -36,3 +36,7 @@ if (is_pandoc_version_sufficient)
                                                "inst", "tests", "files")
                        )
 
+## ---- eval = FALSE-------------------------------------------------------
+#  browseURL(file.path(tempdir(), sub("\\.R$", ".html", basename(path))))
+#  
+

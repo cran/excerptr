@@ -1,3 +1,9 @@
+# excerptr 1.4.0
+
+* Handle exception from pandoc call via rPython using an R system call to pandoc.
+  Calling pandoc from rPython fails on windows, so we work around using
+  system2().
+
 # excerptr 1.3.1
 
 * Run tests requiring pandoc only if pandoc is installed.
