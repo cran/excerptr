@@ -1,8 +1,8 @@
-61768b12f789c4ad7cf24b1ed1c16750 *DESCRIPTION
-352a21227bce607cb07ae55d916124e8 *INSTALL
+697da76c9cd28c9d41302976398b4494 *DESCRIPTION
+1326749c6d0dbde8def7ba7f4fb14ab7 *INSTALL
 8f54895584ca5a75bf65ae4d15ab7121 *LICENSE
 8cacf93551036d9ed382c9629cc2ea75 *NAMESPACE
-3e31af7597e21eab655c450d6b964829 *NEWS.md
+02289e2599b8c9d3016dfaa4ad02f285 *NEWS.md
 ebc5c42e3714307d2427da62539b254c *R/excerptr-package.R
 eb454c73dd08c8dfbee3abd76bb4948e *R/excerptr.R
 b2cc0cc236e7218bf2646eb09fe4d4d4 *R/get_excerpts.R
@@ -10,8 +10,8 @@ b2cc0cc236e7218bf2646eb09fe4d4d4 *R/get_excerpts.R
 1a3301ff42854dec9a8b6b62f0514dab *R/options.R
 e7210ff922e443f0123e4a463bab6424 *R/utils.R
 9a6b94db83d435d06d58d2a66a016a69 *R/zzz.R
-5fc35a35d0a48042079b0eae13a4100a *README.md
-c678ece347284825a135dddab4993b96 *build/vignette.rds
+39326ee45176777f4deafce184d150e3 *README.md
+122f46e21a28a9c5347e5868d14ba029 *build/vignette.rds
 a4163508a433b00e2918e472bad2ed8f *inst/doc/excerptr_Introduction.R
 0d99cc604b4fac6bb1ae557ef3bae815 *inst/doc/excerptr_Introduction.Rmd
 8ec6f7e3bd23d6d7237c2edb5b0d6902 *inst/doc/excerptr_Introduction.html
