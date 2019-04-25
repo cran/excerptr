@@ -1,3 +1,9 @@
+# excerptr 2.0.0
+
+* The package is refactored to now using reticualte instead of rPython.
+  The now obsolete funtions get\_excerpts() set\_excertps\_path() were removed.
+* Now using checkmate to check function arguments.
+
 # excerptr 1.4.1
 
 * Declared imports from devtools in tests as requested by CRAN on Thu, 17 May 2018 10:28:07 +0200.
@@ -26,7 +32,7 @@
 # excerptr 1.1.0
 
 * vignettes/excerptr_Introduction.Rmd: cope with CRAN's check warnings.
-* R/internals.R: construct path using inst/ only on developement.
+* R/internals.R: construct path using inst/ only on development.
 
 # excerptr 1.0.2
 

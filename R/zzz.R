@@ -1,7 +1,7 @@
+# python 'scipy' module I want to use in my package
+excerpts <- NULL
+
 .onLoad <- function(libname, pkgname) {
-    if (is.character(libname) && is.character(pkgname)) {
-       # soothe codetools::checkUsagePackage
-    }
-    set_excertps_path()
-    return(invisible(NULL))
+  # delay load foo module (will only be loaded when accessed via $)
+  excerpts <<- reticulate::import("excerpts", delay_load = TRUE)
 }

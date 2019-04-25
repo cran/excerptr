@@ -1,3 +1,17 @@
+## ----setup, include=FALSE------------------------------------------------
+# adapted from reticulate vignettes/python_packages.Rmd
+
+if (!reticulate::py_available(initialize = TRUE)) {
+    knitr::opts_chunk$set(eval = FALSE)
+} else {
+    inst <- tryCatch(reticulate::py_install("excerpts"), error = identity)
+    if (inherits(inst, "error")) {
+        knitr::opts_chunk$set(eval = FALSE)
+    } else {
+        knitr::opts_chunk$set(eval = TRUE)
+    }
+}
+
 ## ---- comment = ""-------------------------------------------------------
 path <- system.file("tests", "files", "some_file.R", package = "excerptr")
 cat(readLines(path), sep = "\n")

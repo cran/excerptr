@@ -1,13 +1,29 @@
 ---
 title: "An Introduction to *excerptr*"
 author: "Andreas Dominik Cullmann"
-date: 2017-11-30, 11:19:09
+date: 2019-04-23, 17:04:49
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{An Introduction to excerptr}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+```{r setup, include=FALSE}
+# adapted from reticulate vignettes/python_packages.Rmd
+
+if (!reticulate::py_available(initialize = TRUE)) {
+    knitr::opts_chunk$set(eval = FALSE)
+} else {
+    inst <- tryCatch(reticulate::py_install("excerpts"), error = identity)
+    if (inherits(inst, "error")) {
+        knitr::opts_chunk$set(eval = FALSE)
+    } else {
+        knitr::opts_chunk$set(eval = TRUE)
+    }
+}
+```
+
+
 excerptr is an R interface to the python package [excerpts](https://pypi.python.org/pypi/excerpts).
 See there for more on the Why.
 
@@ -59,8 +75,7 @@ if (is_pandoc_version_sufficient)
                                                "inst", "tests", "files")
                        )
 ```
-You can see this html file [here](http://htmlpreview.github.io/?https://github.com/fvafrCU/excerptr/blob/master/inst/tests/files/some_file.html)
-or browse it via
+You browse it via
 ```{r, eval = FALSE}
 browseURL(file.path(tempdir(), sub("\\.R$", ".html", basename(path))))
 

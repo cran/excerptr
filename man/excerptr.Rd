@@ -18,7 +18,7 @@ in \code{file_name}.}
 
 \item{output_path}{Name the path where to output to.}
 
-\item{allow_pep8}{Don't bother. See excerpts.excerpts for details.}
+\item{allow_pep8}{Don't bother. See \command{excerpts.excerpts} for details.}
 
 \item{prefix}{Give a prefix to use for output files.}
 
@@ -33,18 +33,20 @@ LaTeX?}
 \command{pandoc}.}
 }
 \value{
-The status of the \pkg{rPython}\code{::\link[rPython]{python.call}}
-call to excerpts.
+The status of \command{excerpts.excerpts}.
 }
 \description{
-Just a wrapper to the python function excerpts.excerpts.
-See \url{https://github.com/fvafrCU/excerpts/} for details.
+Just a wrapper to the python function \command{excerpts.excerpts}.
+See \url{https://pypi.org/project/excerpts/} for details.
 }
 \examples{
 root <- system.file(package = "excerptr")
 test_files <- file.path(root, "excerpts", "tests", "files")
-excerptr(file_name = file.path(test_files, "some_file.txt"),
-         output_path = tempdir(), run_pandoc = FALSE,
-         compile_latex = FALSE,
-         pandoc_formats = c("tex", "html"))
+if (reticulate::py_available(initialize = TRUE))
+    tryCatch(
+             excerptr(file_name = file.path(test_files, "some_file.txt"),
+                      output_path = tempdir(), run_pandoc = FALSE,
+                      compile_latex = FALSE,
+                      pandoc_formats = c("tex", "html")),
+             error = identity)
 }
