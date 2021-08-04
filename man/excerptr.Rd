@@ -4,9 +4,18 @@
 \alias{excerptr}
 \title{Excerpt Structuring Comments and Set a Table of Contents.}
 \usage{
-excerptr(file_name, comment_character = "#", magic_character = "\%",
-  output_path = "", allow_pep8 = TRUE, prefix = "", postfix = "",
-  run_pandoc = TRUE, compile_latex = FALSE, pandoc_formats = "tex")
+excerptr(
+  file_name,
+  comment_character = "#",
+  magic_character = "\%",
+  output_path = "",
+  allow_pep8 = TRUE,
+  prefix = "",
+  postfix = "",
+  run_pandoc = TRUE,
+  compile_latex = FALSE,
+  pandoc_formats = "tex"
+)
 }
 \arguments{
 \item{file_name}{Name the file from which to excerpt.}
@@ -42,7 +51,7 @@ See \url{https://pypi.org/project/excerpts/} for details.
 \examples{
 root <- system.file(package = "excerptr")
 test_files <- file.path(root, "excerpts", "tests", "files")
-if (reticulate::py_available(initialize = TRUE))
+if (reticulate::py_available())
     tryCatch(
              excerptr(file_name = file.path(test_files, "some_file.txt"),
                       output_path = tempdir(), run_pandoc = FALSE,

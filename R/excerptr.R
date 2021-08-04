@@ -21,7 +21,7 @@
 #' @examples
 #' root <- system.file(package = "excerptr")
 #' test_files <- file.path(root, "excerpts", "tests", "files")
-#' if (reticulate::py_available(initialize = TRUE))
+#' if (reticulate::py_available())
 #'     tryCatch(
 #'              excerptr(file_name = file.path(test_files, "some_file.txt"),
 #'                       output_path = tempdir(), run_pandoc = FALSE,
@@ -43,7 +43,7 @@ excerptr <- function(file_name, comment_character = "#", magic_character = "%",
     checkmate::qassert(compile_latex, "B1")
     checkmate::qassert(pandoc_formats, "S+")
     if (!reticulate::py_module_available("excerpts"))
-        reticulate::py_install("excerpts")
+        reticulate::py_install("excerpts", pip = TRUE)
     excerpts <- reticulate::import("excerpts")
     status <- excerpts[["excerpts"]](file_name = file_name,
                                         comment_character = comment_character,

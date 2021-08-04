@@ -1,3 +1,7 @@
+# excerptr 2.0.1
+
+* Removed LazyData from file DESCRIPTION.
+
 # excerptr 2.0.0
 
 * The package is refactored to now using reticualte instead of rPython.

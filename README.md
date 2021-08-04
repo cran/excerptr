@@ -1,5 +1,5 @@
-[![pipeline status](https://gitlab.com/fvafrCU/excerptr/badges/master/pipeline.svg)](https://gitlab.com/fvafrCU/excerptr/commits/master)    
-[![coverage report](https://gitlab.com/fvafrCU/excerptr/badges/master/coverage.svg)](https://gitlab.com/fvafrCU/excerptr/commits/master)
+[![pipeline status](https://gitlab.com/fvafrCU/excerptr/badges/master/pipeline.svg)](https://gitlab.com/fvafrCU/excerptr/-/commits/master)    
+[![coverage report](https://gitlab.com/fvafrCU/excerptr/badges/master/coverage.svg)](https://gitlab.com/fvafrCU/excerptr/-/commits/master)
 <!-- 
     [![Build Status](https://travis-ci.org/fvafrCU/excerptr.svg?branch=master)](https://travis-ci.org/fvafrCU/excerptr)
     [![Coverage Status](https://codecov.io/github/fvafrCU/excerptr/coverage.svg?branch=master)](https://codecov.io/github/fvafrCU/excerptr?branch=master)
@@ -15,7 +15,7 @@
 # excerptr
 ## Introduction
 Please read the
-[vignette](https://CRAN.R-project.org/package=excerptr/vignettes/excerptr_Introduction.html).
+[vignette](https://cran.r-project.org/package=excerptr/vignettes/An_Introduction_to_excerptr.html).
 
 Or, after installation, the help page:
 

@@ -1,7 +1,7 @@
 ---
 title: "An Introduction to *excerptr*"
 author: "Andreas Dominik Cullmann"
-date: 2019-04-23, 17:04:49
+date: 2021-08-03, 16:26:49
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{An Introduction to excerptr}
@@ -24,7 +24,7 @@ if (!reticulate::py_available(initialize = TRUE)) {
 ```
 
 
-excerptr is an R interface to the python package [excerpts](https://pypi.python.org/pypi/excerpts).
+excerptr is an R interface to the python package [excerpts](https://pypi.org/project/excerpts/).
 See there for more on the Why.
 
 Suppose you have a script

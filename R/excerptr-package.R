@@ -1,7 +1,7 @@
 #' Excerpt Structuring Comments from Your Code File and Set a Table of Contents
 #'
 #' This is just an R interface to the
-#' python package excerpts (\url{https://pypi.python.org/pypi/excerpts}).
+#' python package excerpts (\url{https://pypi.org/project/excerpts/}).
 #'
 #' @name excerptr-package
 #' @aliases excerptr-package
