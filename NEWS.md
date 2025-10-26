@@ -1,3 +1,7 @@
+# excerptr 2.1.0
+
+* Comply with the changes required by Beni Altmann (CRAN).
+
 # excerptr 2.0.1
 
 * Removed LazyData from file DESCRIPTION.

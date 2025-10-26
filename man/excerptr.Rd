@@ -49,13 +49,20 @@ Just a wrapper to the python function \command{excerpts.excerpts}.
 See \url{https://pypi.org/project/excerpts/} for details.
 }
 \examples{
-root <- system.file(package = "excerptr")
-test_files <- file.path(root, "excerpts", "tests", "files")
-if (reticulate::py_available())
+if (reticulate::py_available(initialize = TRUE)) {
+    root <- system.file(package = "excerptr")
+    test_files <- file.path(root, "excerpts", "tests", "files")
+    outpath <- tempdir()
+    python_source <- "some_code.py"
+    f <- normalizePath(file.path(test_files, python_source))
+    cat(readLines(f), sep = "\n")
     tryCatch(
-             excerptr(file_name = file.path(test_files, "some_file.txt"),
+             excerptr(file_name = file.path(test_files, python_source),
                       output_path = tempdir(), run_pandoc = FALSE,
                       compile_latex = FALSE,
                       pandoc_formats = c("tex", "html")),
              error = identity)
+    f <- file.path(outpath, sub("\\\\.py$", ".md", python_source))
+    if (!fritools::is_cran()) cat(readLines(f), sep = "\n")
+}
 }

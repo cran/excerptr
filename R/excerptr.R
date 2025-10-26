@@ -19,15 +19,22 @@
 #' @return The status of \command{excerpts.excerpts}.
 #' @export
 #' @examples
-#' root <- system.file(package = "excerptr")
-#' test_files <- file.path(root, "excerpts", "tests", "files")
-#' if (reticulate::py_available())
+#' if (reticulate::py_available(initialize = TRUE)) {
+#'     root <- system.file(package = "excerptr")
+#'     test_files <- file.path(root, "excerpts", "tests", "files")
+#'     outpath <- tempdir()
+#'     python_source <- "some_code.py"
+#'     f <- normalizePath(file.path(test_files, python_source))
+#'     cat(readLines(f), sep = "\n")
 #'     tryCatch(
-#'              excerptr(file_name = file.path(test_files, "some_file.txt"),
+#'              excerptr(file_name = file.path(test_files, python_source),
 #'                       output_path = tempdir(), run_pandoc = FALSE,
 #'                       compile_latex = FALSE,
 #'                       pandoc_formats = c("tex", "html")),
 #'              error = identity)
+#'     f <- file.path(outpath, sub("\\.py$", ".md", python_source))
+#'     if (!fritools::is_cran()) cat(readLines(f), sep = "\n")
+#' }
 excerptr <- function(file_name, comment_character = "#", magic_character = "%",
              output_path = "", allow_pep8 = TRUE,
              prefix = "", postfix = "", run_pandoc = TRUE,
@@ -43,7 +50,7 @@ excerptr <- function(file_name, comment_character = "#", magic_character = "%",
     checkmate::qassert(compile_latex, "B1")
     checkmate::qassert(pandoc_formats, "S+")
     if (!reticulate::py_module_available("excerpts"))
-        reticulate::py_install("excerpts", pip = TRUE)
+        reticulate::py_require("excerpts")
     excerpts <- reticulate::import("excerpts")
     status <- excerpts[["excerpts"]](file_name = file_name,
                                         comment_character = comment_character,

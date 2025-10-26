@@ -22,9 +22,6 @@ condition of class c("error", "excerptr", "condition").
 Throws a condition of class c("error", "excerptr", "condition").
 }
 \details{
-We use this condition as an error dedicated to \pkg{ excerptr.}
-}
-\examples{
-tryCatch(excerptr:::throw("Hello error!"), excerptr = function(e) return(e))
+We use this condition as an error dedicated to \pkg{excerptr}.
 }
 \keyword{internal}

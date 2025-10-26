@@ -1,8 +1,8 @@
-[![pipeline status](https://gitlab.com/fvafrCU/excerptr/badges/master/pipeline.svg)](https://gitlab.com/fvafrCU/excerptr/-/commits/master)    
-[![coverage report](https://gitlab.com/fvafrCU/excerptr/badges/master/coverage.svg)](https://gitlab.com/fvafrCU/excerptr/-/commits/master)
+[![pipeline status](https://gitlab.com/fvafrcu/excerptr/badges/master/pipeline.svg)](https://gitlab.com/fvafrcu/excerptr/-/commits/master)    
+[![coverage report](https://gitlab.com/fvafrcu/excerptr/badges/master/coverage.svg)](https://gitlab.com/fvafrcu/excerptr/-/commits/master)
 <!-- 
-    [![Build Status](https://travis-ci.org/fvafrCU/excerptr.svg?branch=master)](https://travis-ci.org/fvafrCU/excerptr)
-    [![Coverage Status](https://codecov.io/github/fvafrCU/excerptr/coverage.svg?branch=master)](https://codecov.io/github/fvafrCU/excerptr?branch=master)
+    [![Build Status](https://travis-ci.org/fvafrcu/excerptr.svg?branch=master)](https://travis-ci.org/fvafrcu/excerptr)
+    [![Coverage Status](https://codecov.io/github/fvafrcu/excerptr/coverage.svg?branch=master)](https://codecov.io/github/fvafrcu/excerptr?branch=master)
 -->
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/excerptr)](https://cran.r-project.org/package=excerptr)
 [![RStudio_downloads_monthly](https://cranlogs.r-pkg.org/badges/excerptr)](https://cran.r-project.org/package=excerptr)
@@ -14,12 +14,10 @@
 
 # excerptr
 ## Introduction
-Please read the
-[vignette](https://cran.r-project.org/package=excerptr/vignettes/An_Introduction_to_excerptr.html).
 
-Or, after installation, the help page:
+After installation, please read the help page:
 
-```r
+``` r
 help("excerptr-package", package = "excerptr")
 ```
 
@@ -29,8 +27,19 @@ help("excerptr-package", package = "excerptr")
 #> 
 #> Description:
 #> 
-#>      This is just an R interface to the python package excerpts (<URL:
-#>      https://pypi.python.org/pypi/excerpts>).
+#>      This is just an R interface to the python package excerpts
+#>      (<https://pypi.org/project/excerpts/>).
+#> 
+#> Author(s):
+#> 
+#>      *Maintainer*: Andreas Dominik Cullmann
+#>      <mailto:fvafrcu@mailbox.org>
+#> 
+#> See Also:
+#> 
+#>      Useful links:
+#> 
+#>         • <https://gitlab.com/fvafrcu/excerptr>
 ```
 
 ## System Requirements
@@ -42,9 +51,9 @@ you probably want to have [pandoc](https://www.pandoc.org/) and a TeX-System suc
 You can install excerptr from gitlab with:
 
 
-```r
+``` r
 if (! require("remotes")) install.packages("remotes")
-remotes::install_gitlab("fvafrCU/excerptr")
+remotes::install_gitlab("fvafrcu/excerptr")
 ```
 
 

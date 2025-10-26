@@ -8,4 +8,15 @@
 This is just an R interface to the
 python package excerpts (\url{https://pypi.org/project/excerpts/}).
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://gitlab.com/fvafrcu/excerptr}
+}
+
+}
+\author{
+\strong{Maintainer}: Andreas Dominik Cullmann \email{fvafrcu@mailbox.org}
+
+}
 \keyword{package}
